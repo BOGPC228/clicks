@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 from pathlib import Path
 
 
-
 def shorten_link(bitlink_token, link):
     payload = {"long_url": link}
     headers = {"Authorization": "Bearer {}".format(bitlink_token)}
@@ -44,7 +43,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     link = args.link
     bitlink = urlparse(link)
-    bitlink = "{}{}".format(bitlink.netloc,bitlink.path)
+    bitlink = "{}{}".format(bitlink.netloc, bitlink.path)
     try:
         if is_bitlink(bitlink_token, bitlink):
             print("Клики", count_clicks(bitlink_token, bitlink))
