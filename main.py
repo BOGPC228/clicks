@@ -35,7 +35,6 @@ def is_bitlink(bitlink_token, link):
 
 
 if __name__ == "__main__":
-    env_path = Path('.') / '.env'
     load_dotenv(dotenv_path=env_path)
     bitlink_token = os.getenv("BITLINK_TOKEN")
     parser = argparse.ArgumentParser()
