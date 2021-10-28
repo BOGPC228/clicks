@@ -14,7 +14,10 @@
 ```console 
   pip install -r requirements.txt
 ```
-- Запустить скрипт командой `python main.py`
+- Запустить скрипт командой 
+```
+  python main.py
+```
 
 ## Переменные окружения
 
