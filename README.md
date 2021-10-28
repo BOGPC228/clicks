@@ -7,12 +7,12 @@
 ## Запуск
 
 Для запуска скрипта у вас уже должен быть установлен Python 3, cmd и файл с библиотеками.
-Затем используйте pip (или pip3 если, есть конфликт с Python2) для установки зависимостей.
+Затем используйте pip (или pip3, если есть конфликт с Python2) для установки зависимостей.
 
 - Скачайте код
 - Установите зависимости командой:
 ```console 
-$ python pip install -r requirements.txt
+  pip install -r requirements.txt
 ```
 - Запустить скрипт командой `python main.py`
 
@@ -21,13 +21,6 @@ $ python pip install -r requirements.txt
 Часть настроек проекта берётся из переменных окружения. Чтобы их определить, создайте файл `.env` рядом с `main.py` и запишите туда данные в таком формате: `ПЕРЕМЕННАЯ=значение`.
 - `url` - ссылки для работы кода, документацию можно найти на сайте [Сократить ссылку Bitly ](https://gist.github.com/dvmn-tasks/58f5fdf7b8eb61ea4ed1b528b74d1ab5)
 - `BITLINK_TOKEN` - см [токен на сайте Bitly](https://app.bitly.com/)
-
-## Пример запуска
-
-```console 
-$ python pip install -r requirements.txt
-$ python main.py
-```
 
 ## Цель проекта
 
