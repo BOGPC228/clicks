@@ -38,8 +38,10 @@ if __name__ == "__main__":
     env_path = Path('.') / '.env'
     load_dotenv(dotenv_path=env_path)
     bitlink_token = os.getenv("BITLINK_TOKEN")
-    parser = argparse.ArgumentParser(description="Сокращённая ссылка появляется при вызове скрипта и ввода ссылки\
-                                                  в консоль, для подсчёта кликов надо сделать всё тоже самое только с битлинком" )
+    parser = argparse.ArgumentParser(description="Сокращённая ссылка появляется\
+                                                  при вызове скрипта и ввода ссылки\
+                                                  в консоль, для подсчёта кликов надо\
+                                                  сделать всё тоже самое только с битлинком" )
     parser.add_argument("link", help="Ссылка на сайт")
     args = parser.parse_args()
     link = args.link
